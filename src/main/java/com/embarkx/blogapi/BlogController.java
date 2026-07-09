@@ -41,6 +41,11 @@ public class BlogController {
         return "Deleted";
     }
 
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello World";
+    }
+
 @GetMapping("/total")
 public String getTotalWordCount() {
     List<String> wordCounts = List.of("100", "200", "300");
